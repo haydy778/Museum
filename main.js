@@ -23,7 +23,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
       </div>
       <div class="logotext">
         <li class="navbar-item logoimage">
-          <a class="navbar-item" href="index.html"><img style="width: 400px" src="Images/Asset 4.png" /></a>
+          <a class="navbar-item" href="index.html"><img style="width: 200px" src="Materials/Museum Logo L&R.png" /></a>
         </li>
       </div>
       <ul class="contactbtn">
@@ -44,7 +44,7 @@ class Header extends HTMLElement { // Have my header html in one place so if i n
         <a class="navbar-a-item" href="gallery.html">Gallery</a>
       </li>
       <li class="navbar-item">
-        <a class="navbar-a-item" href="historypage.html">History</a>
+        <a class="navbar-a-item" href="anzac.html">ANZAC</a>
       </li>
       <li class="navbar-item">
         <a class="navbar-a-item" href="quiz.html">Quiz</a>
