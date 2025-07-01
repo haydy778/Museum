@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  background-color: #fff;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px 0px;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+  .owl-dots {
+    display: none !important;
+  }
+}
+
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 10px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+    justify-content: center;
+
+  
+}
+
+.logo img {
+  width: 300px;
+  top: 10px;  
+}
+
+/* Navigation Image */
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.display-4 {
+  font-family: "MyfirstFont", serif;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+.lead {
+  font-family: "MyfirstFont", serif;
+  color: white;
+  font-size: 30px;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .display-4 {
+    font-size: 45px !important;
+  }
+
+  .lead {
+    font-size: 25px !important;
+  }
+
+  .d-none {
+    bottom: 33% !important;
+  }
+
+  .port {
+    bottom: 40% !important;
+  }
+
+  .text {
+    font-size: 45px;
+  }
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+
+.display-4{
+    font-family: "montserrat", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.lead {
+    font-family: "cinzel", serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #e3c564;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.592);
+}

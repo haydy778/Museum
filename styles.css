@@ -892,3 +892,74 @@ footer{
     rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
   transition: all 0.3s;
 }
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 950px) {
+    
+
+  .owl-dots{
+   display: none !important;
+  }
+   
+   }
+
+
+   
+
+   .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+    }
+  
+  
+    .display-4 {
+    font-family: 'MyfirstFont', serif;
+    color: white;
+    font-size: 70px;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+    
+    }
+    .lead {
+    font-family: 'MyfirstFont', serif;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+    }
+
+    @media (min-width: 0px) and (max-width: 600px) {
+        .display-4{
+            font-size: 45px !important;
+        }
+
+        .lead{
+            font-size: 25px !important;
+        }
+
+        .d-none{
+            bottom: 33% !important;
+        }
+
+        .port{
+            bottom: 40% !important;
+        }
+
+        .text{
+            font-size: 45px;
+        }
+    }
+
+      .carousel-caption{
+        bottom: 30%;
+    }
+
+
+
