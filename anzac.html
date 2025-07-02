@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <title>Southland Boys' High Museum</title>
-  <link rel="stylesheet" href="anzacstyles.css" />
+  <link href="anzacstyles.css" rel="stylesheet">
   <link rel="icon" href="Images/Layer 1.png" />
   <script src="https://kit.fontawesome.com/0cecbc8ff8.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/7703c8ece0.js" crossorigin="anonymous"></script>
@@ -14,6 +14,10 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 </head>
 
 
@@ -44,6 +48,120 @@
   </div>
 </header>
 <body>
+    <!--Timeline carousel-->
+<section class="timeline-carousel">
+  <h1>Timeline</h1>
+  <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+      <!--Timeline item-->
+
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('https://www.historyonthenet.com/wp-content/uploads/2016/12/135151-004-0D4D550E.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <span class="year">1914</span>
+              <span class="month">June 28</span>
+              <p>Assassination of Archduke Franz Ferdinand of Austria, heir to the Austro-Hungarian throne, who was killed in Sarajevo along with his wife Duchess Sophie by Bosnian Serb Gavrilo Princip.</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+     
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <div class="pointer"></div>
+              <span class="month">July 5	</span>
+              <p>Austria-Hungary seeks German support for a war against Serbia in case of Russian militarism. Germany gives assurances of support.</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('https://cdn-images-1.medium.com/max/2000/1*tjpdoOeFp6PfczMjqh6JEA.jpeg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <span class="year">1915</span>
+              <span class="month">January 2</span>
+              <p>The Russian offensive in the Carpathians begins. It will continue until April 12.	</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+
+     <!--Timeline item-->
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('https://ichef-1.bbci.co.uk/news/660/media/images/72349000/jpg/_72349652_generals-on-horseback.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <div class="pointer"></div>
+              <span class="month">January 18–19	</span>
+              <p>Battle of Jassin.	</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('https://thechive.files.wordpress.com/2014/05/world-war-1-photography-30.jpg?quality=85&strip=info&w=550') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <span class="year">1916</span>
+              <span class="month">January 5–17</span>
+              <p>Austro-Hungarian offensive against Montenegro, which capitulates.	</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+     
+     <!--Timeline item-->
+      <div class="timeline-carousel__item">
+          <div class="timeline-carousel__image">
+              <div class="media-wrapper media-wrapper--overlay" style="background: url('https://kidskonnect.com/wp-content/uploads/2010/10/Approaching_Omaha.jpg') center center; background-size:cover;"></div>
+          </div>
+          <div class="timeline-carousel__item-inner">
+              <div class="pointer"></div>
+              <span class="month">January 6–7	</span>
+              <p>Battle of Mojkovac.	</p>
+          </div>
+      </div>
+     <!--/Timeline item-->
+  </div>
+</section>
+<!--Timeline carousel-->
+
 
 </body>
+<script>
+
+$.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+  $.js('timeline-carousel').slick({
+    infinite: false,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    speed: 1100,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+  });
+}
+
+carousel();
+</script>
 </html>
