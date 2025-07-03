@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-  background-color: #1d1d1e;
+  background-color: var(--secondary-color);
   overflow-x: hidden;
   overscroll-behavior: none;
   scroll-behavior: smooth;
@@ -15,7 +15,13 @@ html {
 }
 
 body {
-  background-color: #1d1d1e;
+  background-color: var(--secondary-color);
+}
+
+:root{
+  --primary-color: #e3c564;
+  --secondary-color: #1d1d1e;
+  --text-color: #fff;
 }
 
 @media screen and (min-width: 0px) and (max-width: 950px) {
@@ -27,7 +33,7 @@ body {
 /* Logo */
 .logo {
   position: absolute;
-  top: -10px;
+  top: 10px;
   z-index: 1000;
   width: 100%;
   display: flex;
@@ -53,13 +59,13 @@ body {
 
 .display-4 {
   font-family: "MyfirstFont", serif;
-  color: white;
+  color: var(--text-color);
   font-size: 70px;
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
 .lead {
   font-family: "MyfirstFont", serif;
-  color: white;
+  color: var(--text-color);
   font-size: 30px;
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
@@ -94,7 +100,7 @@ body {
   font-family: "montserrat", serif;
   font-weight: 700;
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
 }
 
@@ -102,8 +108,26 @@ body {
   font-family: "cinzel", serif;
   font-weight: 700;
   font-size: 50px;
-  color: #e3c564;
+  color: var(--primary-color);
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.592);
+}
+
+.titles{
+  height: 75px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: wave 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes wave {
+  0% { transform: scaleX(1); }
+  /* 25% { transform: translateY(2px); } */
+  50% { transform: scaleX(1.08); }
+  /* 75% { transform:translateY(-2px); } */
+  100% { transform: scaleX(1); }
 }
 
 /* Profiles */
@@ -112,8 +136,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
-  background: #fff;
+  min-height: 70vh;
+  background: var(--text-color);
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -159,14 +183,14 @@ body {
 .detail h3 {
   margin: 0;
   font-size: 20px;
-  color: #fff;
+  color: var(--text-color);
   font-family: "Cinzel", serif;
 }
 
 .detail span {
   display: block;
   font-size: 12px;
-  color: #e3c564;
+  color: var(--primary-color);
   font-family: 'montserrat', sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
@@ -175,7 +199,7 @@ body {
 
 
 .swiper-button-prev, .swiper-button-next {
-  color: #e3c564;
+  color: var(--primary-color);
   font-family: "montserrat", serif;
   font-weight: 700;
   margin: -50px 60px 30px 60px;
@@ -186,12 +210,20 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-   background: #e3c564 !important;
+   background: var(--primary-color) !important;
+}
+
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
+
+.swiper-scrollbar {
+  display: none;
 }
 
 /* Timeline */
 .timeline-carousel {
-  padding: 86px 6.9444% 90px 6.9444%;
+  padding: 10px 6.9444% 90px 6.9444%;
   position: relative;
   overflow: hidden;
 }
@@ -203,7 +235,7 @@ body {
   top: 0;
   height: 100%;
   width: 6.9444%;
-  background-color: #1d1d1e;
+  background-color: var(--secondary-color);
   z-index: 3;
 }
 .timeline-carousel:after {
@@ -275,13 +307,13 @@ body {
   top: 0;
   height: 100%;
   width: 10px;
-  background-color: #1d1d1e;
+  background-color: var(--secondary-color);
   z-index: 3;
 }
 .timeline-carousel__item-inner .month {
   font-size: 12px;
   text-transform: uppercase;
-  color: #e3c564;
+  color: var(--primary-color);
   display: block;
   margin-bottom: 10px;
   font-weight: 700;
@@ -314,14 +346,14 @@ body {
   border-radius: 100%;
   top: 0;
   left: 0;
-  background-color: #e3c564;
+  background-color: var(--primary-color);
 }
 .timeline-carousel__item-inner .pointer:before {
   width: 1px;
   height: 100%;
   top: 0;
   left: 4px;
-  background-color: #e3c564;
+  background-color: var(--primary-color);
 }
 .timeline-carousel .slick-active .media-wrapper {
   opacity: 1 !important;
@@ -348,8 +380,8 @@ body {
   margin-right: 0;
 }
 .slick-dots li.slick-active button {
-  background: #e3c564;
-  border-color: #e3c564;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 .slick-dots li button {
   display: block;
@@ -364,8 +396,8 @@ body {
   transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
 .slick-dots li button:hover {
-  background: #e3c564;
-  border-color: #e3c564;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .link {
@@ -379,16 +411,16 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 .link .fa {
   font-size: 28px;
   margin-right: 8px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 h1 {
-  color: #e3c564 !important;
+  color: var(--primary-color) !important;
   font-family: "Cinzel", serif;
   font-weight: 200 !important;
   font-size: 50px;
@@ -401,7 +433,7 @@ h1 {
   border: 1px solid #fff !important;
   border-radius: 20%;
   margin: 10px 0px 10px 0px !important;
-  color: #e3c564 !important;
+  color: var(--primary-color) !important;
   font-size: 15px !important;
   font-family: "montserrat", serif !important;
   text-transform: uppercase !important;
@@ -418,7 +450,7 @@ h1 {
   margin-left: -50px;
 }
 
-/*  */
+/* Interactive Map */
 
 .map-container {
   position: relative;
@@ -431,12 +463,71 @@ h1 {
   overflow: hidden;
 }
 
+/* Gallery */
+
+.ind.right{
+  content: "\27F6";
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.ind.left{
+  content: "\27F5";
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.carousel-indicators li{
+  background-color: var(--primary-color) !important;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.owl-dot{
+  user-select: none !important;
+}
+
+  .display-4 {
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+  
+  }
+  .lead {
+
+  text-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+
+  }
+
+
+
+
+  .carousel-control-next-icon:hover{
+      background-color: transparent;
+
+    }
+
+    .carousel-control-prev-icon:hover{
+      background-color: transparent;
+
+    }
+
+    .gallery .carousel-item{
+      height: 70vh;
+    }
+
+    .gallery{
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
+
+
 /* Poppy Field */
 #poppy-field {
   width: 90%;
   height: 500px;
   margin: 0 auto;
-  background-color: #1d1d1e; /* grass-like color */
+  background-color: var(--secondary-color); /* grass-like color */
   position: relative;
   overflow: hidden;
 }
@@ -486,8 +577,8 @@ h1 {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #1d1d1e;
-  color: #e3c564;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   border: none;
   cursor: pointer;
   letter-spacing: 0.1em;
@@ -506,6 +597,6 @@ h1 {
 #poppy-count {
   margin-top: 10px;
   font-weight: 400;
-  color: #fff;
+  color: var(--text-color);
   font-family: "montserrat", serif;
 }

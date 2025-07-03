@@ -1,115 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Poppy Field</title>
+  <meta charset="UTF-8">
+  <title>Texturelabs Gold Text</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding: 40px;
-      text-align: center;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
-    h1 {
-      margin-bottom: 20px;
-    }
+    .shine-png {
+  position: relative;
+  display: inline-block;
+}
 
-    #poppy-field {
-      width: 90%;
-      height: 500px;
-      margin: 0 auto;
-      background-color: #cde8b1; /* grass-like color */
-      border: 2px solid #444;
-      position: relative;
-      overflow: hidden;
-    }
+.shine-png img {
+  display: block;
+  width: 100%; /* or set fixed width like 600px */
+  height: auto;
+}
 
-    .planted-poppy {
-      position: absolute;
-      opacity: 0;
-      animation: float-in 1.2s ease-out forwards;
-      pointer-events: none;
-    }
+.shine-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 
-    .planted-poppy img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+  /* Create the shine gradient */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  transform: skewX(-20deg);
+  animation: shineThroughText 2s infinite;
 
-    @keyframes float-in {
-      0% {
-        transform: translateY(-50px) scale(0.5);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
-    }
+  /* Clip the shine to the PNG shape */
+  -webkit-mask-image: url('Map.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url('Map.png');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
 
-    #plant-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #e74c3c;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+@keyframes shineThroughText {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
 
-    #plant-button:hover {
-      background-color: #c0392b;
-    }
 
-    #poppy-count {
-      margin-top: 10px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
-
-  <h1>Lay a Poppy</h1>
-  <div id="poppy-field"></div>
-  <button id="plant-button">Plant a Poppy</button>
-  <div id="poppy-count">Poppies planted: 0</div>
-
-  <script>
-    let poppyCount = 0;
-    const field = document.getElementById("poppy-field");
-    const button = document.getElementById("plant-button");
-    const counter = document.getElementById("poppy-count");
-
-    button.addEventListener("click", () => {
-      const poppy = document.createElement("div");
-      poppy.className = "planted-poppy";
-
-      // Random size between 20px and 50px
-      const size = Math.floor(Math.random() * 100) + 20;
-      poppy.style.width = `${size}px`;
-      poppy.style.height = `${size}px`;
-
-      // Random position within field
-      const x = Math.random() * (field.clientWidth - size);
-      const y = Math.random() * (field.clientHeight - size);
-      poppy.style.left = `${x}px`;
-      poppy.style.top = `${y}px`;
-
-      // Add poppy image
-      const img = document.createElement("img");
-      img.src = "Images/poppy.png"; // Ensure you have a poppy image at this path
-      img.alt = "Poppy";
-      poppy.appendChild(img);
-
-      field.appendChild(poppy);
-      poppyCount++;
-      counter.textContent = `Poppies planted: ${poppyCount}`;
-    });
-  </script>
-
+  <div class="shine-wrapper">
+    <img src="Materials/Titles/Map.png" alt="Interactive Map" class="shine-image">
+    <div class="shine-overlay"></div>
+  </div>
+  
 </body>
 </html>

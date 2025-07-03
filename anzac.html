@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <title>Southland Boys' High Museum</title>
   <link href="anzacstyles.css" rel="stylesheet">
   <link rel="icon" href="Images/Layer 1.png" />
@@ -21,13 +25,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
- 
+
 </head>
 
 
 <header>
 
-  <div id="indicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel slide" data-ride="carousel">
     <div class="logo"><img src="Materials/ANZAC Logo.png"></div>
     <div style="background-color: black;" class="carousel-inner" role="listbox">
 
@@ -53,133 +57,134 @@
 </header>
 
 <body>
-  <h1 style="margin: 50px;">WW1 and WW2 Boards</h1>
+  <img class="titles" src="Materials/Titles/Boards.png"></img>
   <div style="height: 100vh;" class="names-container"></div>
 
-  <h1>Old Boys Profiles</h1>
-  <div style="height: 100vh;" class="profiles-container">
+  <img class="titles" src="Materials/Titles/Profiles.png">Old Boys Profiles</img>
+  <div style="height: 80vh;" class="profiles-container">
 
     <!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/McInnes PB.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>P. B. McInnes</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/McIntyre EJ.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>E. J. McIntyre</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/McLachlan GE.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>G. E. McLachlan</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/McQueen JS.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>J. S. McQueen</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/North GWH.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>G. W. H. North</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/Oliver, JB.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>J. B. Oliver</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/Parcell, EP.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>E. P. Parcell</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-    <div class="swiper-slide">
-      <div class="picture">
-        <img src="Images/Profiles/Parker AJW.jpeg" alt="">
-      </div>
-      <div class="detail">
-        <h3>A. J. W. Parker</h3>
-        <span>Killed in Action</span>
-      </div>
-    </div>
-    
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/McInnes PB.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>P. B. McInnes</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
 
-<!--   If we need navigation buttons -->
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/McIntyre EJ.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>E. J. McIntyre</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/McLachlan GE.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>G. E. McLachlan</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/McQueen JS.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>J. S. McQueen</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/North GWH.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>G. W. H. North</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/Oliver, JB.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>J. B. Oliver</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/Parcell, EP.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>E. P. Parcell</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="picture">
+            <img src="Images/Profiles/Parker AJW.jpeg" alt="">
+          </div>
+          <div class="detail">
+            <h3>A. J. W. Parker</h3>
+            <span>Killed in Action</span>
+          </div>
+        </div>
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!--   If we need navigation buttons -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
 
   </div>
 
   <script>
     var swiper = new Swiper(".swiper-container", {
-effect: "coverflow",
-grabCursor: true,
-loop: true,
-centeredSlides: true,
-slidesPerView: "auto",
-coverflowEffect: {
-  rotate: 20,
-  stretch: 0,
-  depth: 350,
-  modifier: 1,
-  slideShadows: true
-},
-pagination: {
-  el: ".swiper-pagination"
-},
-navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev'
-},
-});
+      effect: "coverflow",
+      grabCursor: true,
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      autoplaySpeed: 1000,
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    });
 
   </script>
 
@@ -188,7 +193,7 @@ navigation: {
 
   <!-- Interactive map -->
   <div class="map-container">
-    <h1 style="margin-bottom: 50px;">Interactive Map</h1>
+    <img src="Materials/Titles/Map.png" class="titles" style="margin-bottom: 50px;">Interactive Map</img>
 
     <div class="map-image-container">
       <img src="Images/Map.png" alt="ANZAC Map" class="map-image">
@@ -200,7 +205,7 @@ navigation: {
 
   <!--Timeline carousel-->
   <section class="timeline-carousel">
-    <h1>Timeline</h1>
+    <img class="titles" src="Materials/Titles/Timeline.png">Timeline</img>
     <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
       <!--Timeline item-->
 
@@ -297,141 +302,142 @@ navigation: {
   </section>
 
 
-<!-- Image Carousel -->
-<header>
-  <div id="indicators" class="carousel slide" data-ride="carousel">
+  <!-- Image Carousel -->
+  <header>
+    <div id="indicators" class="carousel slide" data-ride="carousel">
 
       <ol class="carousel-indicators">
-          <li data-target="#indicators" data-slide-to="0" class="active"></li>
-          <li data-target="#indicators" data-slide-to="1"></li>
-          <li data-target="#indicators" data-slide-to="2"></li>
+        <li data-target="#indicators" data-slide-to="0" class="active"></li>
+        <li data-target="#indicators" data-slide-to="1"></li>
+        <li data-target="#indicators" data-slide-to="2"></li>
+        <li data-target="#indicators" data-slide-to="3"></li>
+
       </ol>
 
-      <div style="background-color: black;" class="carousel-inner" role="listbox">
+      <div style="background-color: black;" class="carousel-inner gallery" role="listbox">
+        <div class="carousel-caption d-none d-md-block">
+          <img src="Materials/Lest We Forget.png" alt="Logo" style="width: auto; height: 70px;">
+        </div>
 
-          <div class="carousel-item active" style="background-image: url('21.9.22-52.jpg');">
-          
-              <div class="carousel-caption d-none d-md-block">
-                  <h3 class="display-4"></h3>
-                  <p class="lead">Welcome To Millar Photography</p>
-              </div>
-          </div>
+        <div class="carousel-item active"
+          style="background-image: url('Images/Carousel/Dickens\ BG.jpg'); opacity: 0.5;">
+        </div>
 
 
-          <div class="carousel-item" style="background-image: url('Image\ 81.png'); ">
-              <div class="carousel-caption d-none d-md-block">
-                  <h3 class="display-4"></h3>
-                  <p class="lead">Welcome To Millar Photography</p>
-              </div>
-          </div>
+        <div class="carousel-item"
+          style="background-image: url('Images/Carousel/Nicholson\ JRM\ \ copy.jpg'); opacity: 0.5;">
+        </div>
 
 
 
-          <div class="carousel-item" style="background-image: url('21.9.22-51.jpg');">
-              <div class="carousel-caption d-none d-md-block">
-                  <h3 class="display-4"></h3>
-                  <p class="lead">Welcome To Millar Photography</p>
-              </div>
-          </div>
-         
+        <div class="carousel-item" style="background-image: url('Images/Carousel/Vickery\ HE.jpg'); opacity: 0.5;">
 
-      </div> 
-      <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev"> 
-          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
-          <span class="ind left">&#10229;</span>            
-          <span class="sr-only">Previous</span> 
-      </a> 
+        </div>
+        <div class="carousel-item" style="background-image: url('Images/Carousel/Vickery\ HE\ 3.jpg'); opacity: 0.5;">
 
-      <a class="carousel-control-next" href="#indicators" role="button" data-slide="next"> 
-          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
-          <span class="ind right">&#10230;</span>
-          <span class="sr-only">Next</span> 
+        </div>
+
+
+      </div>
+      <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
+        <span class="ind left">&#10229;</span>
+        <span class="sr-only">Previous</span>
       </a>
-  </div>
-</header>
+
+      <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
+        <span class="ind right">&#10230;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <script>
+
+      $.js = function (el) {
+        return $('[data-js=' + el + ']')
+      };
+    
+      function carousel() {
+        $.js('timeline-carousel').slick({
+          infinite: true,
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 1000,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }]
+        });
+      }
+    
+      carousel();
+    </script>
+  </header>
 
 
 
-<!-- Poppy Field -->
-  <h1 style="margin: 50px;">Poppy Field</h1>
+  <!-- Poppy Field -->
+  <img class="titles" style="margin-bottom: 50px;" src="Materials/Titles/Poppy.png"></img>
   <div style="height: 80vh;" class="poppy-container">
+
     <body>
       <div id="poppy-field"></div>
 
       <div class="poppy-controls">
         <a id="plant-button">Plant a Poppy</a>
       </div>
-      
-    
+
+
       <script>
         let poppyCount = 10;
         const field = document.getElementById("poppy-field");
         const button = document.getElementById("plant-button");
         const counter = document.getElementById("poppy-count");
-    
+
         function createPoppy() {
           const poppy = document.createElement("div");
           poppy.className = "planted-poppy";
-    
+
           const size = Math.floor(Math.random() * 100) + 20;
           poppy.style.width = `${size}px`;
           poppy.style.height = `${size}px`;
-    
+
           const x = Math.random() * (field.clientWidth - size);
           const y = Math.random() * (field.clientHeight - size);
           poppy.style.left = `${x}px`;
           poppy.style.top = `${y}px`;
-    
+
           const img = document.createElement("img");
           img.src = "Images/poppy.png"; // Path to your poppy image
           img.alt = "Poppy";
           poppy.appendChild(img);
-    
+
           field.appendChild(poppy);
         }
-    
+
         // Render 89 initial poppies
         for (let i = 0; i < 10; i++) {
           createPoppy();
         }
-    
-        button.addEventListener("click", () => {    
+
+        button.addEventListener("click", () => {
           createPoppy();
-          poppyCount++;  
+          poppyCount++;
         });
 
       </script>
-      
-    
+
+
   </div>
 </body>
-<script>
-
-  $.js = function (el) {
-    return $('[data-js=' + el + ']')
-  };
-
-  function carousel() {
-    $.js('timeline-carousel').slick({
-      infinite: false,
-      arrows: true,
-      dots: true,
-      autoplay: true,
-      speed: 1100,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      responsive: [
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }]
-    });
-  }
-
-  carousel();
-</script>
 
 </html>
