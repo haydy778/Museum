@@ -54,9 +54,18 @@
     }
 
     .pin:hover .info-box,
-    .pin:focus .info-box {
+    .pin:focus .info-box,
+    .pin.active .info-box {
       opacity: 1;
       transform: scaleY(1);
+    }
+
+    .line {
+      position: absolute;
+      width: 2px;
+      background: #000;
+      z-index: 5;
+      transform-origin: top left;
     }
 
     @media (max-width: 768px) {
@@ -75,18 +84,38 @@
 </head>
 <body>
   <div class="map-container">
-    <img src="Images/Map.png" alt="Map of Europe" />
+    <img src="your-map-image.jpg" alt="Map of Europe" />
 
     <!-- Example pin with animation -->
     <div class="pin" style="top: 45%; left: 40%;">
-      <img src="Images/Pin.png" alt="Pin" />
-      <div class="info-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis praesentium eum earum, numquam voluptas quos. Doloremque id natus, numquam, minus quam explicabo necessitatibus, doloribus corporis debitis enim facere amet at.</div>
+      <img src="your-pin-image.png" alt="Pin" />
+      <div class="info-box">Alps: Major European mountain range</div>
+      <div class="line" style="top: 50%; left: 50%; height: 40px; transform: rotate(45deg);"></div>
     </div>
 
     <div class="pin" style="top: 55%; left: 60%;">
-      <img src="Images/Pin.png" alt="Pin" />
-      <div class="info-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum totam velit libero quae iusto maiores illum et suscipit repellat delectus, nihil ut, odio unde sint consectetur id? Dicta, nobis.</div>
+      <img src="your-pin-image.png" alt="Pin" />
+      <div class="info-box">Black Sea: Historic body of water</div>
+      <div class="line" style="top: 60%; left: 65%; height: 40px; transform: rotate(-45deg);"></div>
     </div>
   </div>
+
+  <script>
+    document.querySelectorAll('.pin').forEach(pin => {
+      pin.addEventListener('click', () => {
+        const isActive = pin.classList.contains('active');
+        document.querySelectorAll('.pin').forEach(p => p.classList.remove('active'));
+        if (!isActive) {
+          pin.classList.add('active');
+        }
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.pin')) {
+        document.querySelectorAll('.pin').forEach(pin => pin.classList.remove('active'));
+      }
+    });
+  </script>
 </body>
 </html>

@@ -212,6 +212,24 @@
     </div>
   </div>
 
+  <script>
+    document.querySelectorAll('.pin').forEach(pin => {
+      pin.addEventListener('click', () => {
+        const isActive = pin.classList.contains('active');
+        document.querySelectorAll('.pin').forEach(p => p.classList.remove('active'));
+        if (!isActive) {
+          pin.classList.add('active');
+        }
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!event.target.closest('.pin')) {
+        document.querySelectorAll('.pin').forEach(pin => pin.classList.remove('active'));
+      }
+    });
+  </script>
+
 
 
 

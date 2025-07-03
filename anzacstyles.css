@@ -463,6 +463,7 @@ h1 {
   overflow: hidden;
 }
 
+
 .pin {
   position: absolute;
   width: 32px;
@@ -478,14 +479,14 @@ h1 {
 
 .info-box {
   position: absolute;
-  top: 50px;
-  left: -80px;
+  top: -50%;
+  left: 40px;
   width: 260px;
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--secondary-color);
   padding: 10px;
   font-size: 14px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  color: var(--text-color);
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top;
@@ -494,7 +495,8 @@ h1 {
 }
 
 .pin:hover .info-box,
-.pin:focus .info-box {
+.pin:focus .info-box,
+.pin.active .info-box {
   opacity: 1;
   transform: scaleY(1);
 }
