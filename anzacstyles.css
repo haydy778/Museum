@@ -250,7 +250,10 @@ body {
 }
 .timeline-carousel .slick-dots {
   bottom: -73px;
+  margin-left: 10px !important;
 }
+
+
 .timeline-carousel h1 {
   color: rgba(255, 255, 255, 1);
   font-size: 46px;
@@ -359,6 +362,7 @@ body {
   opacity: 1 !important;
 }
 
+
 .slick-dots {
   bottom: 60px;
   list-style: none;
@@ -371,17 +375,30 @@ body {
 .slick-dots li {
   cursor: pointer;
   display: inline-block;
-  margin: 0 6px;
+  margin: 0 4px;
   position: relative;
   width: 10px;
   height: 10px;
 }
+
+
+.slick-dots li button {
+    display: block;
+    font-size: 0;
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0px !important;
+    background-color: #e3c56454 !important;
+    outline: none !important;
+    border: 1px solid #e3c56400 !important;
+}
+
 .slick-dots li:last-child {
   margin-right: 0;
 }
 .slick-dots li.slick-active button {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
 }
 .slick-dots li button {
   display: block;
