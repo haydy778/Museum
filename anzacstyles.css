@@ -492,6 +492,7 @@ h1 {
   transform-origin: top;
   transition: all 0.3s ease;
   z-index: 10;
+  font-family: "montserrat", sans-serif;
 }
 
 .pin:hover .info-box,
