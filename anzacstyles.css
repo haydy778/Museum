@@ -575,10 +575,10 @@ h1 {
 
 #plant-button {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-size: 16px;
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--text-color);
   border: none;
   cursor: pointer;
   letter-spacing: 0.1em;
@@ -600,3 +600,32 @@ h1 {
   color: var(--text-color);
   font-family: "montserrat", serif;
 }
+
+/* Footer */
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "montserrat", serif;
+  width: 100vw;
+  height: 50px;
+  margin-top: 100px;
+  box-shadow: -2px 14px 39px 6px rgba(227,197,100,0.75);
+  -webkit-box-shadow: -2px 14px 39px 6px rgba(227,197,100,0.75);
+  -moz-box-shadow: -2px 14px 39px 6px rgba(227,197,100,0.75);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container p {
+  margin: 0px 25px 0px 25px;
+
+}
+
