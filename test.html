@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Texturelabs Gold Text</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Map</title>
   <style>
     body {
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
+      font-family: sans-serif;
     }
 
-    .shine-png {
-  position: relative;
-  display: inline-block;
-}
+    .map-container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-.shine-png img {
-  display: block;
-  width: 100%; /* or set fixed width like 600px */
-  height: auto;
-}
+    .map-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.shine-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+    .pin {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
 
-  /* Create the shine gradient */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0) 80%
-  );
-  transform: skewX(-20deg);
-  animation: shineThroughText 2s infinite;
+    .pin img {
+      width: 100%;
+      height: auto;
+    }
 
-  /* Clip the shine to the PNG shape */
-  -webkit-mask-image: url('Map.png');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-image: url('Map.png');
-  mask-repeat: no-repeat;
-  mask-size: contain;
-}
+    .info-box {
+      position: absolute;
+      top: 40px;
+      left: -80px;
+      width: 160px;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: all 0.3s ease;
+      z-index: 10;
+    }
 
-@keyframes shineThroughText {
-  0% {
-    left: -100%;
-  }
-  100% {
-    left: 100%;
-  }
-}
+    .pin:hover .info-box,
+    .pin:focus .info-box {
+      opacity: 1;
+      transform: scaleY(1);
+    }
 
+    @media (max-width: 768px) {
+      .info-box {
+        width: 130px;
+        left: -65px;
+        font-size: 12px;
+      }
 
+      .pin {
+        width: 24px;
+        height: 24px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="shine-wrapper">
-    <img src="Materials/Titles/Map.png" alt="Interactive Map" class="shine-image">
-    <div class="shine-overlay"></div>
+  <div class="map-container">
+    <img src="Images/Map.png" alt="Map of Europe" />
+
+    <!-- Example pin with animation -->
+    <div class="pin" style="top: 45%; left: 40%;">
+      <img src="Images/Pin.png" alt="Pin" />
+      <div class="info-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis praesentium eum earum, numquam voluptas quos. Doloremque id natus, numquam, minus quam explicabo necessitatibus, doloribus corporis debitis enim facere amet at.</div>
+    </div>
+
+    <div class="pin" style="top: 55%; left: 60%;">
+      <img src="Images/Pin.png" alt="Pin" />
+      <div class="info-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum totam velit libero quae iusto maiores illum et suscipit repellat delectus, nihil ut, odio unde sint consectetur id? Dicta, nobis.</div>
+    </div>
   </div>
-  
 </body>
 </html>

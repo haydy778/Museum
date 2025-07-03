@@ -452,7 +452,7 @@ h1 {
 
 /* Interactive Map */
 
-.map-container {
+.map-image-container {
   position: relative;
   width: 100vw;
 }
@@ -461,6 +461,55 @@ h1 {
   position: relative;
   width: 100%;
   overflow: hidden;
+}
+
+.pin {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.pin img {
+  width: 100%;
+  height: auto;
+}
+
+.info-box {
+  position: absolute;
+  top: 50px;
+  left: -80px;
+  width: 260px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.pin:hover .info-box,
+.pin:focus .info-box {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    width: 130px;
+    left: -65px;
+    font-size: 12px;
+  }
+
+  .pin {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* Gallery */

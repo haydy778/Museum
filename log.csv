@@ -1,0 +1,119 @@
+"500333f","haydy778","Thu, 3 Jul 2025 17:51:09 +1200","Adds footer section and updates button styling","Introduces a footer element with copyright and attribution details, including corresponding styles for layout and appearance.	
+Adjusts button padding and text color for improved consistency with the design theme.	",
+ 2 files changed, 38 insertions(+), 2 deletions(-)	
+"7970b4d","haydy778","Thu, 3 Jul 2025 13:59:58 +1200","Removes carousel demo and updates museum page styles","Eliminates outdated carousel demo files to streamline project.	Enhances museum page layout and styling with consistent theme
+colors, responsive design improvements, and title animations.	Introduces CSS variables for easier theme management.
+",	 16 files changed, 389 insertions(+), 499 deletions(-)
+	"30084c1","haydy778","Thu, 3 Jul 2025 11:13:58 +1200","Adds image sliders and updates styling for profiles section","Integrates Swiper.js to create interactive sliders for the profiles section, enhancing user experience with carousel functionality.
+	Updates HTML structure and CSS styling for consistency, including adjustments to background colors, typography, and layout.
+	Improves visual presentation of Old Boys Profiles and timeline carousel while maintaining responsiveness across devices.
+",	 23 files changed, 690 insertions(+), 273 deletions(-)
+	"95a0011","haydy778","Wed, 2 Jul 2025 14:59:49 +1200","Adds interactive features and improves layout for ANZAC page","Enhances the ANZAC page with new sections, including WW1/WW2 boards, Old Boys profiles, and an interactive map. Introduces a dynamic "Poppy Field" feature, allowing users to plant poppies interactively. Refines carousel and timeline styles for better responsiveness and visual clarity. Updates test.html to test the interactive poppy planting functionality.
+",	 5 files changed, 382 insertions(+), 241 deletions(-)
+	"230a839","haydy778","Wed, 2 Jul 2025 13:19:05 +1200","Adds timeline carousel and improves styling","Introduces a responsive timeline carousel with historical event details, enhancing interactivity and user experience. Updates HTML structure, adds new external scripts and styles, and improves CSS for better layout and design consistency.
+",	 7 files changed, 517 insertions(+), 2 deletions(-)
+	"61cca20","haydy778","Wed, 2 Jul 2025 11:37:31 +1200","Add ANZAC page with new logo, styles, and content updates","",
+ 22 files changed, 369 insertions(+), 93 deletions(-)	
+"d22f9d8","haydy778","Mon, 30 Jun 2025 12:23:43 +1200","Setting ANZAC page up with a new logo and some styling changes, along with adding nav bar in.","",	 6 files changed, 127 insertions(+), 32 deletions(-)
+	"9896f57","haydy778","Mon, 17 Feb 2025 15:05:57 +1300","Change header to JS","",
+ 8 files changed, 109 insertions(+), 552 deletions(-)	
+"7917648","haydy778","Tue, 15 Oct 2024 12:22:34 +1300","15","",	 3 files changed, 4 insertions(+), 3 deletions(-)
+	"379d83c","haydy778","Mon, 4 Sep 2023 16:19:05 +1200","Updated Styles","",
+ 1 file changed, 50 insertions(+)	
+"ea38e12","oshadhapereraSBHS","Mon, 4 Sep 2023 15:25:24 +1200","Add files via upload","",	 1 file changed, 0 insertions(+), 0 deletions(-)
+	"09ff198","oshadhapereraSBHS","Mon, 4 Sep 2023 15:23:52 +1200","hover for collections","",
+"a24dea1","BinaryGuy109","Mon, 4 Sep 2023 12:57:42 +1200","Links","updated more hrefs	",
+ 2 files changed, 14 insertions(+), 2 deletions(-)	
+"7015ce6","BinaryGuy109","Mon, 4 Sep 2023 12:41:34 +1200","Timeline","changed the size of the text on the timeline, to make it easier for people with blurred vision to read.	",
+ 1 file changed, 1 insertion(+)	
+"e650be0","BinaryGuy109","Mon, 4 Sep 2023 12:36:24 +1200","Links","updated some of the HREFS	",
+ 1 file changed, 2 insertions(+), 2 deletions(-)	
+"84370be","BinaryGuy109","Mon, 4 Sep 2023 12:32:05 +1200","Timeline","Added stuff to the timeline	",
+ 1 file changed, 4 insertions(+), 4 deletions(-)	
+"fb12d93","oshadhapereraSBHS","Mon, 4 Sep 2023 12:17:24 +1200","Add files via upload","",	 3 files changed, 8 insertions(+), 6 deletions(-)
+	"aab2279","BinaryGuy109","Mon, 4 Sep 2023 11:36:04 +1200","1","1
+",	 1 file changed, 2 insertions(+), 2 deletions(-)
+	"53bf34b","oshadhapereraSBHS","Mon, 4 Sep 2023 10:52:30 +1200","hover imgs","",
+ 3 files changed, 0 insertions(+), 0 deletions(-)	
+"1f8a578","oshadhapereraSBHS","Mon, 4 Sep 2023 10:45:21 +1200","Add files via upload","",	 4 files changed, 64 insertions(+), 18 deletions(-)
+	"b49f090","haydy778","Sun, 3 Sep 2023 11:12:10 +1200","update","",
+ 1 file changed, 1335 insertions(+), 1030 deletions(-)	
+"1f29aa9","haydy778","Sun, 3 Sep 2023 11:10:29 +1200","contact page","",	 2 files changed, 1076 insertions(+), 1 deletion(-)
+	"e6d1991","haydy778","Fri, 1 Sep 2023 14:48:29 +1200","1 september","",
+ 5 files changed, 402 insertions(+), 399 deletions(-)	
+"c18a789","oshadhapereraSBHS","Fri, 1 Sep 2023 13:36:14 +1200","font colour of quiz","",	 1 file changed, 6 insertions(+), 63 deletions(-)
+	"4eed016","haydy778","Fri, 1 Sep 2023 13:34:36 +1200","Update collections page","",
+ 3 files changed, 116 insertions(+), 51 deletions(-)	
+"9db4150","oshadhapereraSBHS","Fri, 1 Sep 2023 13:29:02 +1200","update quiz","",	"388c819","oshadhapereraSBHS","Fri, 1 Sep 2023 13:24:33 +1200","fonts for quiz","",
+ 1 file changed, 15 insertions(+), 1 deletion(-)	
+"758e2ea","oshadhapereraSBHS","Fri, 1 Sep 2023 13:20:21 +1200","updated quiz","",	 1 file changed, 30 insertions(+), 1 deletion(-)
+	"6f38522","haydy778","Wed, 30 Aug 2023 10:21:53 -1200","styles update","",
+ 1 file changed, 2 insertions(+), 1 deletion(-)	
+"5f2c4f7","haydy778","Wed, 30 Aug 2023 10:12:18 -1200","Update","",	 2 files changed, 0 insertions(+), 0 deletions(-)
+	"fa95dd1","BinaryGuy109","Thu, 31 Aug 2023 09:26:58 +1200","style.css","removed some code from the timeline that was affect other colors on this and other pages.
+",	 1 file changed, 1 insertion(+), 6 deletions(-)
+	"b3a6418","BinaryGuy109","Thu, 31 Aug 2023 09:17:23 +1200","Timeline","Instead of using embedded code from an website, I changed it to html, this ensures that it can be seen, even when used on a local file.
+",	 2 files changed, 150 insertions(+), 1 deletion(-)
+	"a2021b8","oshadhapereraSBHS","Wed, 30 Aug 2023 14:57:41 +1200","changed title","",
+ 1 file changed, 214 insertions(+)	
+"314a98f","oshadhapereraSBHS","Wed, 30 Aug 2023 14:47:22 +1200","fixed broken img links","",	 1 file changed, 17 insertions(+), 17 deletions(-)
+	"b3622d2","oshadhapereraSBHS","Wed, 30 Aug 2023 14:46:23 +1200","fixed broken img links","",
+ 1 file changed, 1 insertion(+), 1 deletion(-)	
+"fddb437","oshadhapereraSBHS","Wed, 30 Aug 2023 14:29:39 +1200","adding questions and answers","",	 1 file changed, 25 insertions(+), 25 deletions(-)
+	"c85758b","BinaryGuy109","Wed, 30 Aug 2023 11:03:02 +1200","history page","changed the size of the sbhs above the timeline
+",	 2 files changed, 4 insertions(+), 12 deletions(-)
+	"e796f9f","haydy778","Wed, 30 Aug 2023 10:58:18 +1200","30 August","",
+ 2 files changed, 85 insertions(+), 1 deletion(-)	
+"ed89055","oshadhapereraSBHS","Wed, 30 Aug 2023 10:52:54 +1200","framework for quiz","",	 2 files changed, 367 insertions(+)
+	"4631776","haydy778","Wed, 30 Aug 2023 10:32:11 +1200","-","",
+ 2 files changed, 0 insertions(+), 0 deletions(-)	
+"0a7f22b","haydy778","Tue, 29 Aug 2023 10:26:35 -1200","Updated sports page","",	 2 files changed, 41 insertions(+), 1 deletion(-)
+	"e1eba53","oshadhapereraSBHS","Wed, 30 Aug 2023 10:21:44 +1200","museum photos","",
+ 18 files changed, 0 insertions(+), 0 deletions(-)	
+"64a99f8","haydy778","Tue, 29 Aug 2023 10:21:02 -1200","Update index.html","",	 1 file changed, 2 insertions(+), 2 deletions(-)
+	"e28c9ff","haydy778","Tue, 29 Aug 2023 10:16:31 -1200","29 August","",
+ 5 files changed, 299 insertions(+), 32 deletions(-)	
+"7c1dd36","haydy778","Tue, 29 Aug 2023 10:02:10 -1200","29 August","",	 6 files changed, 60 insertions(+), 3 deletions(-)
+	"a11cdec","BinaryGuy109","Tue, 29 Aug 2023 15:02:06 +1200","Changes to history page","Removed the banner so that it is easier for the user to know when they have changed pages. Changed the timeline color to suit the rest of the page. (Work in progress, and not shown on code as it is embedded from another website).
+",	 1 file changed, 5 insertions(+), 5 deletions(-)
+	"8361046","haydy778","Tue, 29 Aug 2023 09:56:50 +1200","29 August - Footer higher 40vh to 50vh","",
+ 2 files changed, 101 insertions(+), 1 deletion(-)	
+"af62d0c","haydy778","Tue, 29 Aug 2023 09:52:49 +1200","29 August","",	 4 files changed, 142 insertions(+), 142 deletions(-)
+	"24e79cb","oshadhapereraSBHS","Wed, 23 Aug 2023 09:59:56 +1200","gallery","",
+ 4 files changed, 250 insertions(+), 2 deletions(-)	
+"083fff0","haydy778","Thu, 17 Aug 2023 10:31:47 +1200","17 August","",	 2 files changed, 12 insertions(+), 14 deletions(-)
+	"b4d9d35","haydy778","Thu, 17 Aug 2023 10:11:01 +1200","17 August","",
+ 2 files changed, 258 insertions(+), 44 deletions(-)	
+"752dfaf","BinaryGuy109","Wed, 16 Aug 2023 14:38:49 +1200","updated href","updated href	",
+ 1 file changed, 1 insertion(+), 1 deletion(-)	
+"62275cd","BinaryGuy109","Wed, 16 Aug 2023 14:14:57 +1200","Timeline","added the embedded timeline	",
+ 1 file changed, 2 insertions(+), 2 deletions(-)	
+"e89b3bd","BinaryGuy109","Wed, 16 Aug 2023 14:00:48 +1200","sbhs_Banner image","added a temporary sbhs banner image	",
+ 1 file changed, 0 insertions(+), 0 deletions(-)	
+"2fbffbe","BinaryGuy109","Wed, 16 Aug 2023 13:59:12 +1200","added historypage","instead of merging branches, decided to add the history page to main branch, as it won't change anything on the index	",
+ 1 file changed, 142 insertions(+)	
+"3080cb8","BinaryGuy109","Wed, 16 Aug 2023 13:48:15 +1200","History Page","updated the history href to the correct name	",
+ 1 file changed, 80 insertions(+), 61 deletions(-)	
+"9c74ad8","BinaryGuy109","Tue, 15 Aug 2023 09:59:08 +1200","History Page","Added History page and added link to the index, (css was fixed)	",
+ 3 files changed, 151 insertions(+), 1 deletion(-)	
+"3818cc9","haydy778","Mon, 14 Aug 2023 14:21:45 +1200","14 August","",	 3 files changed, 1 insertion(+), 2 deletions(-)
+	"9a1bdb5","haydy778","Fri, 11 Aug 2023 12:28:51 +1200","11 August","",
+ 4 files changed, 165 insertions(+), 63 deletions(-)	
+"4939300","haydy778","Wed, 9 Aug 2023 17:26:50 +1200","9 August","",	 2 files changed, 16 insertions(+), 8 deletions(-)
+	"a50fdee","haydy778","Wed, 9 Aug 2023 17:26:41 +1200","9 August","",
+ 3 files changed, 114 insertions(+), 18 deletions(-)	
+"294a190","BinaryGuy109","Wed, 9 Aug 2023 14:58:28 +1200","History Page","added the history links to the index.html page	",
+ 1 file changed, 11 insertions(+)	
+"b1ad5dd","haydy778","Wed, 9 Aug 2023 09:19:59 +1200","9 August","",	 3 files changed, 117 insertions(+), 17 deletions(-)
+	"3841064","haydy778","Tue, 8 Aug 2023 09:58:20 +1200","Changed colour on banner text","",
+ 2 files changed, 1 insertion(+), 1 deletion(-)	
+"0122b6e","haydy778","Mon, 7 Aug 2023 21:23:22 +1200","7 August - Collections","",	 17 files changed, 13 insertions(+), 9 deletions(-)
+	"d5a2471","haydy778","Mon, 7 Aug 2023 15:03:42 +1200","7 August","",
+ 2 files changed, 144 insertions(+), 8 deletions(-)	
+"4b2071f","haydy778","Mon, 7 Aug 2023 14:41:44 +1200","7 August","",	 3 files changed, 116 insertions(+), 108 deletions(-)
+	"6767894","haydy778","Mon, 7 Aug 2023 14:41:36 +1200","7 August","",
+ 2 files changed, 1733 insertions(+)	
+"a24ac29","haydy778","Mon, 7 Aug 2023 09:39:42 +1200","7 August","",	 8 files changed, 445 insertions(+), 414 deletions(-)
+	"f3d8138","haydy778","Fri, 4 Aug 2023 12:30:00 +1200","4 August","",
+ 4 files changed, 417 insertions(+)	
+"3e3e9fd","haydy778","Mon, 3 Jul 2023 15:38:24 +1200","Add files via upload","",	 1 file changed, 0 insertions(+), 0 deletions(-)
