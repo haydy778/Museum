@@ -57,7 +57,7 @@
 </header>
 
 <body>
-  <img class="titles" src="Materials/Titles/Boards.png"></img>
+  <img class="titles" src="Materials/Titles/Boards.png">
   <div style="height: 100vh;" class="names-container"></div>
 
   <img class="titles" src="Materials/Titles/Profiles.png">Old Boys Profiles</img>
@@ -156,8 +156,6 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
     </div>
 
   </div>
@@ -193,7 +191,7 @@
 
   <!-- Interactive map -->
   <div class="map-container">
-    <img src="Materials/Titles/Map.png" class="titles" style="margin-bottom: 50px;">Interactive Map</img>
+    <img src="Materials/Titles/Map.png" class="titles" style="margin-bottom: 50px;">
 
 
     <div class="map-image-container">
@@ -206,6 +204,16 @@
       </div>
   
       <div class="pin" style="top: 55%; left: 60%;">
+        <img src="Images/Pin.png" alt="Pin" />
+        <div class="info-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum totam velit libero quae iusto maiores illum et suscipit repellat delectus, nihil ut, odio unde sint consectetur id? Dicta, nobis.</div>
+      </div>
+
+      <div class="pin" style="top: 15%; left: 50%;">
+        <img src="Images/Pin.png" alt="Pin" />
+        <div class="info-box">At this location ____, SBHS Old Boys' John and Doe fought and lost their lives due to an explosion.</div>
+      </div>
+  
+      <div class="pin" style="top: 75%; left: 70%;">
         <img src="Images/Pin.png" alt="Pin" />
         <div class="info-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rerum totam velit libero quae iusto maiores illum et suscipit repellat delectus, nihil ut, odio unde sint consectetur id? Dicta, nobis.</div>
       </div>
@@ -235,7 +243,7 @@
 
   <!--Timeline carousel-->
   <section class="timeline-carousel">
-    <img class="titles" src="Materials/Titles/Timeline.png">Timeline</img>
+    <img class="titles" src="Materials/Titles/Timeline.png">
     <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
       <!--Timeline item-->
 
@@ -395,6 +403,7 @@
           dots: true,
           autoplay: true,
           autoplaySpeed: 3000,
+          grabCursor: true,
           speed: 1000,
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -416,9 +425,8 @@
 
 
   <!-- Poppy Field -->
-  <img class="titles" style="margin-bottom: 50px;" src="Materials/Titles/Poppy.png"></img>
-  <div style="height: 80vh;" class="poppy-container">
-
+  <img class="titles" style="margin-bottom: 50px;" src="Materials/Titles/Poppy.png">
+  <div style="margin-bottom: 120px;"></div>
     <body>
       <div id="poppy-field"></div>
 
