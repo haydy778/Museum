@@ -45,6 +45,10 @@ body {
   top: 10px;
 }
 
+   .gallery1 .carousel-item{
+      height: 120vh;
+    }
+
 /* Navigation Image */
 
 .carousel-item {

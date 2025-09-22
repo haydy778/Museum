@@ -57,8 +57,7 @@
 </header>
 
 <body>
-  <img class="titles" src="Materials/Titles/Boards.png">
-  <div style="height: 100vh;" class="names-container"></div>
+
 
   <img class="titles" src="Materials/Titles/Profiles.png"/>
   <div style="height: 80vh;" class="profiles-container">
@@ -186,7 +185,74 @@
 
   </script>
 
+  <img class="titles" src="Materials/Titles/Boards.png" style="margin-top: -20px; margin-bottom: 30px;">
 
+    <!-- Image Carousel -->
+  <header>
+    <div id="indicators" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#indicators" data-slide-to="0" class="active"></li>
+        <li data-target="#indicators" data-slide-to="1"></li>
+      </ol>
+
+      <div style="background-color: black;" class="carousel-inner gallery1" role="listbox">
+
+        <div class="carousel-item active"
+          style="background-image: url('Boards/EOSR4592-2.png'); opacity: 1;">
+        </div>
+
+
+        <div class="carousel-item"
+          style="background-image: url('Boards/EOSR4597-2.png'); opacity: 1;">
+        </div>
+
+
+      </div>
+      <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>  -->
+        <span class="ind left">&#10229;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>  -->
+        <span class="ind right">&#10230;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <script>
+
+      $.js = function (el) {
+        return $('[data-js=' + el + ']')
+      };
+    
+      function carousel() {
+        $.js('timeline-carousel').slick({
+          infinite: true,
+          arrows: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          grabCursor: true,
+          speed: 1000,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }]
+        });
+      }
+    
+      carousel();
+    </script>
+  </header>
 
 
   <!-- Interactive map -->
